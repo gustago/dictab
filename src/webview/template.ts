@@ -36,7 +36,7 @@ export function getWebviewHtml(
   </header>
   <main id="grid"></main>
   <div id="status"></div>
-  <script nonce="${nonce}" src="${scriptUri}"></script>
+  <script type="module" nonce="${nonce}" src="${scriptUri}"></script>
 </body>
 </html>`;
 }

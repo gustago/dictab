@@ -8,7 +8,10 @@
     "vscode": "^1.85.0",
     "node": ">=20"
   },
-  "categories": ["Other", "Data Science"],
+  "categories": [
+    "Other",
+    "Data Science"
+  ],
   "main": "./dist/extension/extension.js",
   "activationEvents": [],
   "contributes": {
@@ -16,7 +19,11 @@
       {
         "viewType": "dictab.spreadsheet",
         "displayName": "dictab Spreadsheet",
-        "selector": [{ "filenamePattern": "*.t.py" }],
+        "selector": [
+          {
+            "filenamePattern": "*.t.py"
+          }
+        ],
         "priority": "option"
       }
     ],
@@ -46,7 +53,11 @@
       "properties": {
         "dictab.theme": {
           "type": "string",
-          "enum": ["auto", "light", "dark"],
+          "enum": [
+            "auto",
+            "light",
+            "dark"
+          ],
           "default": "auto",
           "description": "Tema da planilha. 'auto' segue o tema do VSCode."
         }
@@ -64,10 +75,12 @@
     "vscode:prepublish": "npm run build"
   },
   "devDependencies": {
+    "@types/jsdom": "^28.0.1",
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.85.0",
     "@vitest/coverage-v8": "^1.6.0",
     "@vscode/vsce": "^2.24.0",
+    "jsdom": "^29.1.0",
     "typescript": "^5.4.0",
     "vitest": "^1.6.0"
   }
